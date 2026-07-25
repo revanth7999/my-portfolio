@@ -156,6 +156,10 @@ export default function Portfolio() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  useEffect(() => {
+    document.title = "Revanth - Software Engineer";
+  }, []);
+
   return (
     <div className="pf-root" data-theme={theme}>
       <style>{`
